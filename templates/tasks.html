@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="task-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" placeholder="Enter your task">
+            <button id="addTaskButton">Add Task</button>
+            <button id="saveTasksButton">Save Tasks</button>
+        </div>
+
+        <ul id="taskList">
+            <!-- Task items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script src="static/js/tasks.js"></script> <!-- Вот здесь вы добавляете путь к вашему JavaScript-файлу -->
+</body>
+</html>
