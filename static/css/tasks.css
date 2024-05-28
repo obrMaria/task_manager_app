@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    justify-content: space-between; /* Равномерно распределяет пространство между элементами */
+}
+
+
+.task-list li.selected {
+    background-color: #d3d3d3;
+}
+
+.task-list li .task-text {
+    display: inline-block;
+    margin-right: 10px; /* Добавляем небольшое расстояние между текстом и кнопкой */
+}
+
+.task-list li button {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #000;
+    margin-left: 5px;
+}
+
+.task-list li button:hover {
+    background-color: #ccc;
+}
+
+
+.task-list li button:hover {
+    background-color: #ccc;
+}
+
+.task-controls button {
+    flex: 1;
+    margin: 5px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form action="/register" method="post" class="form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        {% if error %}
+            <script>
+                alert("{{ error }}");
+            </script>
+        {% endif %}
+    </div>
+</body>
+</html>

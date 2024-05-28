@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="task-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" placeholder="Enter your task">
+            <button id="addTaskButton" class="btn">Add Task</button>
+            <button id="saveTasksButton" class="btn">Save Tasks</button>
+            <button id="importTasksButton" class="btn">Import Tasks</button>
+        </div>        
+
+        <div class="task-controls">
+            <button id="moveUpButton" class="btn">⬆️ Move Up</button>
+            <button id="moveDownButton" class="btn">⬇️ Move Down</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <li>
+                <span class="task-text">Задача 1</span>
+                <button onclick="removeTask(this)">Delete</button>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/tasks.js') }}"></script>
+</body>
+</html>
